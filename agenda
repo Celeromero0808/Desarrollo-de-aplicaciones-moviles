@@ -1,0 +1,26 @@
+
+class Agenda  (Evento):
+    def __init__(self):
+        self.eventos = []
+
+    def agregar_evento(self, evento):
+        self.eventos.append(evento)
+
+    def mostrar_eventos(self):
+        if self.eventos:
+            print("Eventos en la agenda:")
+            for evento in self.eventos:
+                print(evento)
+        else:
+            print("No hay eventos agendados.")
+
+
+
+
+
+
+
+
+
+
+

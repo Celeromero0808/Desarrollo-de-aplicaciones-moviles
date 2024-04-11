@@ -1,0 +1,10 @@
+class TrabajosPracticos (Evento):
+    
+    def __init__(self,fecha,descripcion,materia):
+        super().__init__()
+        self.materia=materia
+        self.descripcion=descripcion
+    def __str__(self) :
+         return f"Fecha: {self.fecha}, trabajo practico de: {self.materia} , descripcion  {self.descripcion} :"
+
+
