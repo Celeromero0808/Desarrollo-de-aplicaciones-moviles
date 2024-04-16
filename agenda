@@ -1,5 +1,4 @@
-
-class Agenda  (Evento):
+class agenda:
     def __init__(self):
         self.eventos = []
 
@@ -7,20 +6,27 @@ class Agenda  (Evento):
         self.eventos.append(evento)
 
     def mostrar_eventos(self):
-        if self.eventos:
-            print("Eventos en la agenda:")
-            for evento in self.eventos:
-                print(evento)
-        else:
+        if not self.eventos:
             print("No hay eventos agendados.")
+            return
+        print("Eventos en la agenda:")
+        for evento in self.eventos:
+            print(evento)
+
+    def eliminar_evento(self, descripcion):
+        self.eventos = [evento for evento in self.eventos if evento.descripcion != descripcion]
 
 
+    def main ():
+        mi_agenda=Agenda()
 
+        agenda.agregar_evento(Trabajo Practico("24-9-7","matematicas","informe"))
 
+        agenda.mostrar_eventos()
 
+        agenda.eliminar_evento("informe")
 
+        agenda.mostrar_eventos()
 
-
-
-
-
+        if __name__=="main":
+    main ()

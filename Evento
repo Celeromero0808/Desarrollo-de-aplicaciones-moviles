@@ -1,7 +1,8 @@
-class Evento :
+class evento :
     def __init__(self, fecha, descripcion):
         self.fecha = fecha
         self.descripcion = descripcion
     
     def __str__(self):
         return f"Fecha: {self.fecha}, Descripción: {self.descripcion}"
+
