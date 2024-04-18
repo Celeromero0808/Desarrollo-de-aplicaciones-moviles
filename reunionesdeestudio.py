@@ -1,5 +1,3 @@
-
-
 from Evento import evento
 
 class ReunionEstudio (evento) :

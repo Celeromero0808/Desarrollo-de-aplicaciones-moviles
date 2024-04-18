@@ -18,9 +18,9 @@ class agenda:
 
 
     def main ():
-        mi_agenda=Agenda()
+        mi_agenda=agenda()
 
-        agenda.agregar_evento(Trabajo Practico("24-9-7","matematicas","informe"))
+        agenda.agregar_evento ( ("24-9-7","matematicas","informe"))
 
         agenda.mostrar_eventos()
 
@@ -28,5 +28,5 @@ class agenda:
 
         agenda.mostrar_eventos()
 
-        if __name__=="main":
-    main ()
+       
+    
